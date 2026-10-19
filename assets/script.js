@@ -21,6 +21,23 @@
 
   document.getElementById('year').textContent = new Date().getFullYear();
 
+  // stagger index for cards, timeline items and gallery photos
+  document.querySelectorAll('.reveal').forEach(function (sec) {
+    sec.querySelectorAll('.card, .timeline > li, .gallery figure').forEach(function (el, i) {
+      el.style.setProperty('--i', Math.min(i, 8));
+    });
+  });
+
+  // scroll progress bar
+  var bar = document.getElementById('progress');
+  function onScroll() {
+    var h = document.documentElement;
+    var max = h.scrollHeight - h.clientHeight;
+    bar.style.transform = 'scaleX(' + (max > 0 ? Math.min(1, h.scrollTop / max) : 0) + ')';
+  }
+  addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
   // reveal on scroll
   var revealed = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window) {
