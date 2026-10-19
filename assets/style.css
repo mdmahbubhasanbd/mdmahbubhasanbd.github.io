@@ -64,7 +64,58 @@ html.leaving main, html.leaving .legal { transform: translateY(-8px); transition
 
 /* brand */
 .brand { display: flex; align-items: center; gap: 10px; }
-.logo { width: 38px; height: 38px; color: var(--ink); transition: transform .5s cubic-bezier(.3, 1.4, .5, 1); }
+.logo { width: 30px; height: 30px; border-radius: 8px; box-shadow: 0 2px 6px rgba(15, 118, 110, .35); transition: transform .5s cubic-bezier(.3, 1.4, .5, 1); }
+.nav { padding-top: 8px; padding-bottom: 8px; }
+.nav nav a.active { color: var(--accent); background: var(--accent-soft); }
+
+/* contact icons */
+.social { display: flex; justify-content: center; flex-wrap: wrap; gap: 14px; margin: 26px 0 18px; }
+.social a { display: block; width: 52px; height: 52px; border-radius: 14px; box-shadow: var(--shadow); transition: transform .2s ease, box-shadow .2s ease; }
+.social a:hover { transform: translateY(-4px) scale(1.06); box-shadow: 0 10px 24px rgba(0, 0, 0, .18); }
+.social svg { display: block; width: 100%; height: 100%; }
+.contact .mail { margin: 0 auto; text-align: center; font-size: 1.02rem; }
+.cta-row { margin: 28px 0 0; text-align: center; }
+.tease { text-decoration: none; color: var(--ink); display: flex; flex-direction: column; transition: transform .15s, border-color .15s; }
+.tease:hover { transform: translateY(-3px); border-color: var(--accent); }
+.tease p { color: var(--muted); font-size: .94rem; flex: 1; }
+.tease .more { margin-top: 12px; color: var(--accent); font-weight: 600; font-size: .92rem; }
+
+/* projects page */
+.pmain { padding-top: 40px; padding-bottom: 40px; }
+.phead h1 { font-size: clamp(2rem, 4vw, 2.8rem); margin-bottom: 10px; }
+.phead p { color: var(--muted); max-width: 70ch; margin: 0 0 8px; }
+.playout { display: grid; grid-template-columns: 290px 1fr; gap: 32px; margin-top: 28px; align-items: start; }
+.ptabs { position: sticky; top: 76px; display: flex; flex-direction: column; gap: 6px; }
+.pgroup { margin: 14px 0 4px; font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); font-weight: 700; }
+.pgroup:first-child { margin-top: 0; }
+.ptabs button { display: flex; align-items: center; gap: 12px; width: 100%; text-align: left; padding: 11px 14px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); color: var(--ink); font: inherit; font-size: .95rem; cursor: pointer; transition: border-color .15s, background .15s, transform .15s; }
+.ptabs button i { flex: none; width: 26px; height: 26px; border-radius: 8px; display: grid; place-items: center; font-style: normal; font-weight: 700; font-size: .8rem; background: var(--accent-soft); color: var(--accent); }
+.ptabs button:hover { border-color: var(--accent); transform: translateX(3px); }
+.ptabs button.on { border-color: var(--accent); background: var(--accent-soft); font-weight: 600; }
+.ptabs button.on i { background: var(--accent); color: var(--accent-ink); }
+.ppanel { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 30px; box-shadow: var(--shadow); animation: rise .45s cubic-bezier(.2, .7, .2, 1) both; }
+.ppanel[hidden] { display: none; }
+.ppanel h2 { font-size: clamp(1.4rem, 2.6vw, 1.9rem); display: block; margin: 0 0 8px; }
+.ppanel h2::after { display: none; }
+.ppanel h3 { font-size: 1.02rem; margin: 22px 0 6px; color: var(--accent); }
+.ppanel p { margin: 0 0 10px; }
+.ppanel ul:not(.chips) { margin: 0 0 10px; padding-left: 20px; }
+.ppanel li { margin-bottom: 4px; }
+.ppanel .meta { color: var(--muted); font-size: .92rem; margin-bottom: 16px; }
+.pimg { display: block; padding: 0; border: 0; background: none; cursor: zoom-in; text-align: left; color: var(--muted); font: inherit; font-size: .85rem; }
+.pimg img { width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--line); }
+.pimg span { display: block; margin-top: 6px; }
+.pimg.wide { margin: 14px 0 6px; }
+.pgal { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; margin: 16px 0; }
+.pgal .pimg img { height: 150px; object-fit: cover; }
+
+@media (max-width: 860px) {
+  .playout { grid-template-columns: 1fr; gap: 20px; }
+  .ptabs { position: static; flex-direction: row; flex-wrap: wrap; }
+  .pgroup { width: 100%; }
+  .ptabs button { width: auto; flex: 1 1 calc(50% - 6px); font-size: .88rem; padding: 9px 10px; }
+  .ppanel { padding: 20px; }
+}
 .brand:hover .logo { transform: rotate(-8deg) scale(1.08); }
 .brand-name { font-weight: 700; font-size: 1rem; letter-spacing: -.01em; }
 .brand-name b { color: var(--accent); }
