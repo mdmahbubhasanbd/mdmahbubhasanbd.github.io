@@ -238,6 +238,11 @@ main, footer { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
 .award { display: grid; grid-template-columns: 84px 1fr; gap: 24px; align-items: start; }
 .award .seal { width: 64px; height: auto; margin: 6px auto 0; padding: 6px; background: #fff; border-radius: 12px; border: 1px solid var(--line); box-sizing: content-box; }
 h3.subhead { font-size: 1.05rem; margin: 26px 0 0; }
+/* whole card is the link: the hidden stretched link sits on the card's "see topics" line */
+.card.clickable { position: relative; cursor: pointer; transition: transform .15s, border-color .15s, box-shadow .15s; }
+.card.clickable:hover { transform: translateY(-3px); border-color: var(--accent); }
+.card.clickable .more-link a::after { content: ""; position: absolute; inset: 0; border-radius: var(--radius); }
+.card.clickable .more-link a { color: var(--accent); }
 .more-link { margin: 14px 0 0 !important; font-weight: 600; }
 .more-link a { text-decoration: none; }
 .more-link a:hover { text-decoration: underline; }
