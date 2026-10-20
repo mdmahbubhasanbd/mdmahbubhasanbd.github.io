@@ -109,6 +109,15 @@ html.leaving main, html.leaving .legal { transform: translateY(-8px); transition
 .pgal { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; margin: 16px 0; }
 .pgal .pimg img { height: 150px; object-fit: cover; }
 
+/* figure galleries and small tables in project panels */
+.pgal.fig { grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 14px; align-items: start; }
+.pgal.fig .pimg img { height: auto; max-height: 260px; object-fit: contain; background: #fff; padding: 4px; }
+.pgal.fig .pimg span { font-size: .82rem; line-height: 1.35; }
+table.mini { border-collapse: collapse; margin: 8px 0 12px; font-size: .92rem; width: 100%; max-width: 520px; }
+table.mini th, table.mini td { border: 1px solid var(--line); padding: 6px 10px; text-align: left; }
+table.mini th { background: var(--accent-soft); color: var(--accent); }
+html[lang="en"] table.mini .de, html[lang="de"] table.mini .en { display: none; }
+
 /* study notes */
 .ptabs button small { color: var(--muted); font-size: .78rem; font-weight: 400; }
 .notes h3 { font-size: 1.25rem; color: var(--ink); margin: 34px 0 8px; padding-top: 18px; border-top: 1px solid var(--line); scroll-margin-top: 90px; }
@@ -220,6 +229,9 @@ main, footer { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
 .awards { display: grid; gap: 20px; }
 .award { display: grid; grid-template-columns: 84px 1fr; gap: 24px; align-items: start; }
 .award .seal { width: 64px; height: auto; margin: 6px auto 0; padding: 6px; background: #fff; border-radius: 12px; border: 1px solid var(--line); box-sizing: content-box; }
+.more-link { margin: 14px 0 0 !important; font-weight: 600; }
+.more-link a { text-decoration: none; }
+.more-link a:hover { text-decoration: underline; }
 .award.stack { display: block; }
 .award .orglogo { display: block; height: 58px; width: auto; max-width: 100%; margin: 0 0 16px; border-radius: 6px; }
 .award h3 { font-size: 1.25rem; }
