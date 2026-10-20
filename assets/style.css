@@ -116,6 +116,14 @@ html.leaving main, html.leaving .legal { transform: translateY(-8px); transition
 table.mini { border-collapse: collapse; margin: 8px 0 12px; font-size: .92rem; width: 100%; max-width: 520px; }
 table.mini th, table.mini td { border: 1px solid var(--line); padding: 6px 10px; text-align: left; }
 table.mini th { background: var(--accent-soft); color: var(--accent); }
+table.mini.wide { max-width: none; font-size: .9rem; }
+table.mini td { vertical-align: top; }
+ol.steps { list-style: none; padding: 0; margin: 12px 0 18px; border-left: 2px solid var(--line); }
+ol.steps > li { position: relative; padding: 0 0 18px 22px; }
+ol.steps > li::before { content: ""; position: absolute; left: -7px; top: 6px; width: 12px; height: 12px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 4px var(--surface); }
+ol.steps > li > b { display: block; margin-bottom: 4px; }
+ol.steps p { margin: 0 0 6px; }
+.exfacts { margin-top: 20px; }
 html[lang="en"] table.mini .de, html[lang="de"] table.mini .en { display: none; }
 
 /* study notes */
