@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Three levels of the food fraud analysis: micro, meso, macro">
+<style>text{font-family:Segoe UI,Arial,sans-serif}.h{font-size:16px;font-weight:700;fill:#0b5c56}.s{font-size:13px;fill:#14211f}.c{font-size:11.5px;fill:#55645f}</style>
+<rect width="640" height="360" fill="#ffffff"/>
+<rect x="30" y="20" width="580" height="96" rx="14" fill="#e0f2ef" stroke="#0f766e"/><text x="50" y="48" class="h">Macro level: policy and governance</text><text x="50" y="72" class="s">EU official-controls rules (2017/625), RASFF alerts, Codex, international cooperation</text><text x="50" y="94" class="c">Digital systems need coordination, equal access to data and law that keeps pace</text>
+<rect x="70" y="132" width="500" height="96" rx="14" fill="#c7ebe5" stroke="#0f766e"/><text x="90" y="160" class="h">Meso level: platforms, certification, industry</text><text x="90" y="184" class="s">Shared data platforms, GS1 traceability, certification bodies, automated quality control</text><text x="90" y="206" class="c">Protected designations of origin, supplier data sharing</text>
+<rect x="110" y="244" width="420" height="96" rx="14" fill="#99f6e4" stroke="#0f766e"/><text x="130" y="272" class="h">Micro level: actors and practices</text><text x="130" y="296" class="s">IoT sensors, blockchain batch records, QR codes on bottles, DNA and spectroscopic tests</text><text x="130" y="318" class="c">Case: organic extra virgin olive oil adulteration</text>
+</svg>

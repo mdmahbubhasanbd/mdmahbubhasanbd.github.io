@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 330" role="img" aria-label="Share of the population facing hunger by region, from the food security paper">
+<style>text{font-family:Segoe UI,Arial,sans-serif}.t{font-size:17px;font-weight:700;fill:#14211f}.l{font-size:14px;fill:#14211f}.v{font-size:14px;font-weight:700;fill:#0f766e}.n{font-size:11px;fill:#55645f}</style>
+<rect width="640" height="330" fill="#ffffff"/>
+<text x="24" y="32" class="t">Share of people who cannot eat enough</text>
+<g transform="translate(0,52)">
+ <text x="24" y="28" class="l">Africa</text><rect x="190" y="12" width="400" height="24" rx="5" fill="#0f766e"/><text x="598" y="29" class="v" text-anchor="end" fill="#fff" style="fill:#fff">20%</text>
+ <text x="24" y="78" class="l">Asia</text><rect x="190" y="62" width="170" height="24" rx="5" fill="#2dd4bf"/><text x="368" y="79" class="v">8.5%</text>
+ <text x="24" y="128" class="l">Latin America and Caribbean</text><rect x="190" y="112" width="130" height="24" rx="5" fill="#5eead4"/><text x="328" y="129" class="v">6.5%</text>
+ <text x="24" y="178" class="l">World (about 735 million people)</text><rect x="190" y="162" width="184" height="24" rx="5" fill="#99f6e4"/><text x="382" y="179" class="v">9.2%</text>
+</g>
+<text x="24" y="312" class="n">Figures as quoted in the paper (Mumah, Hong and Chen, 2025). Chart drawn for this page.</text>
+</svg>
